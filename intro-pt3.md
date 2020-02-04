@@ -52,12 +52,13 @@ function swapVideo(){
 ```
 In the final step create an array of video file names ( that need to be located in the same directory). Swap the source (src) of the video tag for the new video.
 ```JavaScript
-let videos = ["my-movie-seagull.mp4", "my-movie-cry.mp4"];
+let videos = ["my-movie-seagull.mp4", "my-movie-cry.mp4"]
 
 function swapVideo(){
 	console.log(myVideo.currentTime);
 	if (myVideo.currentTime > 5) {
 		console.log("greater than 5 secs");
+		//remove the eventlistener so swapVideo isn't triggered again
 		myVideo.removeEventListener('timeupdate', swapVideo);
 		//set source of <video> to the first video in the array
 		myVideo.src = videos[0];
