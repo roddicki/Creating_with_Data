@@ -69,3 +69,16 @@ Now create the playVideo and pauseVideo functions the the event listeners will t
       myVideo.pause(); 
   } 
 ```
+Once you have  successfully tested this consider changing the play and pause button to a single play / pause using the the paused property of the HTML video.
+
+Change your playVideo() function so that it uses an if statement as follows
+```JavaScript
+  function playVideo() { 
+    if (myVideo.paused) {
+      myVideo.play(); 
+    }
+    else {
+      myVideo.pause();
+    };
+  }
+```
