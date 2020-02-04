@@ -127,3 +127,6 @@ Add the function displayTime(), so that the inner HTML of the current-time div u
   }
 ```
 When you test this page you should see the video time up date as the video plays back.
+# Source Code
+The full source code is available at
+examples/pt1-2.html
