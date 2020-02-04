@@ -53,10 +53,10 @@ Now  target JavaScript to to target the video tag so that it's play and pause pr
 ```
 Also target the play and pause links / buttons and add an event listener to listen for a click event on either link / button. 
 ```JavaScript
-  let myVideo = document.querySelector("#my-video"); 
-```
-let playBtn = document.querySelector("#play-video"); 
-playBtn.addEventListener("click", play);
+  let playBtn = document.querySelector("#play-video"); 
+  playBtn.addEventListener("click", play);
 
-let pauseBtn = document.querySelector("#pause-video"); 
-pauseBtn.addEventListener("click", pause);
+  let pauseBtn = document.querySelector("#pause-video"); 
+  pauseBtn.addEventListener("click", pause); 
+```
+
