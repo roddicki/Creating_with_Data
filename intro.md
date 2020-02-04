@@ -4,8 +4,10 @@ It is quite straightforward to manipulate video in a webpage using JavaScript.
 This workshop will explore the base code needed to to play, pause, swap videos.
 
 There are two main references online that also explore this:
+
 Simpler
 https://www.w3schools.com/tags/ref_av_dom.asp 
+
 More complex 
 https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs 
 
