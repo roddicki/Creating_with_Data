@@ -31,3 +31,10 @@ Experiment adding the controls,  loop and autoplay attributes to see the effect 
   Your browser does not support HTML5 video.
 </video>
 ```
+Now you will add some JavaScript to play and pause the video.   Do this with a script tag immediately before the the bottom of the body tag (in a production environment it would be better to link a separate JavaScript file, but for this simple prototype script tags embedded in the HTML will suffice).
+```html
+  <script> 
+    //js goes here
+  </script> 
+</body>
+```
