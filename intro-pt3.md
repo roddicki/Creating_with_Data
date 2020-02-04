@@ -31,13 +31,13 @@ There are two steps to implementing this.  First in the JavaScript create a vari
 
 Check it works by console logging the timeupdate
 ```JavaScript
-<script> 
-	let myVideo = document.querySelector("#my-video"); 
-	myVideo.addEventListener('timeupdate', swapVideo);
 
-	function swapVideo(){
-		console.log(myVideo.currentTime);
-	}
+let myVideo = document.querySelector("#my-video"); 
+myVideo.addEventListener('timeupdate', swapVideo);
 
-</script> 
+function swapVideo(){
+	console.log(myVideo.currentTime);
+}
+
+
 ```
