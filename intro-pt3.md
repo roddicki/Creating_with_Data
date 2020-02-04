@@ -19,8 +19,9 @@ As in the previous  section you should begin with a HTML file with a video tag, 
 	<source src="my-movie.mp4" type="video/mp4">
 	Your browser does not support the video tag.
    </video>
+	
 <script> 
-
+  //JavaScript here
 </script> 
 </body>
 
