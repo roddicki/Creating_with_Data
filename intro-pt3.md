@@ -6,19 +6,19 @@ As in the previous  section you should begin with a HTML file with a video tag, 
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-	<title>video</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <title>video</title>
 
 </head>
 
 <body>
-	<div>Embedding a video and controlling it with javascript</div>
+   <div>Embedding a video and controlling it with javascript</div>
 
-	<video  mute controls id="my-video">
-		<source src="my-movie.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
+   <video  mute controls id="my-video">
+	<source src="my-movie.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+   </video>
 <script> 
 
 </script> 
