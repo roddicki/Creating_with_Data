@@ -99,6 +99,11 @@ And an event listener to listen for a click that will trigger a restart function
   let restartBtn = document.querySelector("#restart-video");
   restartBtn.addEventListener("click", restartVideo); 
 ```
-Then finally we need to add the restart function 
+Then finally add the restart function using the currentTime property of the HTML video element. The function simply sets the current time to 0s. 
+```JavaScript
+  function restartVideo(){
+    myVideo.currentTime = 0;
+  }
+```
 
 # Part Two
