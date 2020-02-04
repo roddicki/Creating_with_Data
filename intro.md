@@ -18,8 +18,15 @@ The second part of the  workshop you will load a video from an array of video fi
 # Part One
 Start with an  HTML document that embeds an MP4 video using the video tag.
 ```html
-<video id="myVideo" width="320" height="176">
-  <source src="mov_bbb.mp4" type="video/mp4">
+<video id="myVideo">
+  <source src="my-movie.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+```
+Experiment adding the controls,  loop and autoplay attributes to see the effect that they have. 
+```html
+<video id="myVideo" controls loop autoplay>
+  <source src="my-movie.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 ```
