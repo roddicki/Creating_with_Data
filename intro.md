@@ -31,8 +31,17 @@ Experiment adding the controls,  loop and autoplay attributes to see the effect 
   Your browser does not support HTML5 video.
 </video>
 ```
-Now you will add some JavaScript to play and pause the video.   Do this with a script tag immediately before the the bottom of the body tag (in a production environment it would be better to link a separate JavaScript file, but for this simple prototype script tags embedded in the HTML will suffice).
+Now you will add some HTML links / buttons and JavaScript to play and pause the video. Add  HTML buttons underneath the video tag and and add a script tag immediately before the the bottom of the body tag (in a production environment it would be better to link a separate JavaScript file, but for this simple prototype script tags embedded in the HTML will suffice).
 ```html
+  <video  mute controls id="myVideo">
+    <source src="my-movie.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div>
+    <a href="#" id="play-video">Play</a>
+    <a href="#" id="pause-video">Pause</a>
+  </div>
   <script> 
     //js goes here
   </script> 
