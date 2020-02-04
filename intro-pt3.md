@@ -67,5 +67,5 @@ function swapVideo(){
 	};
 }
 ```
-#Source Code
+# Source Code
 Get the full source of this example [examples/pt3.html](examples/pt3.html)
