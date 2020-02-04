@@ -31,7 +31,6 @@ There are two steps to implementing this.  First in the JavaScript create a vari
 
 Check it works by console logging the timeupdate
 ```JavaScript
-
 let myVideo = document.querySelector("#my-video"); 
 myVideo.addEventListener('timeupdate', swapVideo);
 
@@ -42,3 +41,12 @@ function swapVideo(){
 Develop this further by logging a message when the current time is 5 seconds or more.
 
 To prevent the the message firing at every subsequent timeupdate remove the event listener.
+```JavaScript
+function swapVideo(){
+	console.log(myVideo.currentTime);
+	if (myVideo.currentTime > 5) {
+		console.log("greater than 5 secs");
+		myVideo.removeEventListener('timeupdate', swapVideo);
+	};
+}
+```
