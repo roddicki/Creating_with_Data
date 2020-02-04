@@ -116,7 +116,7 @@ To implement this In the HTML add a new div tag with an id.
 ```html
   <div id="current-time">0</div>
 ```
- In the JavaScript  add a timeupdate  add event listener that triggers a function called displayTime() when it fires.
+ In the JavaScript  add a timeupdate event listener that triggers a function called displayTime() every time it fires.
 ```JavaScript
   myVideo.addEventListener('timeupdate', displayTime);
 ```
@@ -126,3 +126,4 @@ Add the function displayTime(), so that the inner HTML of the current-time div u
     document.querySelector("#current-time").innerHTML = myVideo.currentTime;
   }
 ```
+When you test this page you should see the video time up date as the video plays back.
