@@ -38,6 +38,7 @@ myVideo.addEventListener('timeupdate', swapVideo);
 function swapVideo(){
 	console.log(myVideo.currentTime);
 }
-
-
 ```
+Develop this further by logging a message when the current time is 5 seconds or more.
+
+To prevent the the message firing at every subsequent timeupdate remove the event listener.
