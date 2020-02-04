@@ -54,18 +54,18 @@ Now  target JavaScript to to target the video tag so that it's play and pause pr
 Also target the play and pause links / buttons and add an event listener to listen for a click event on either link / button. 
 ```JavaScript
   let playBtn = document.querySelector("#play-video"); 
-  playBtn.addEventListener("click", play);
+  playBtn.addEventListener("click", playVideo);
 
   let pauseBtn = document.querySelector("#pause-video"); 
-  pauseBtn.addEventListener("click", pause); 
+  pauseBtn.addEventListener("click", pauseVideo);
 ```
-Now create the play and pause functions the the event listeners will trigger when they detect a click. these functions use the play() and pause() method that is built into to the API for the HTML video tag.
+Now create the playVideo and pauseVideo functions the the event listeners will trigger when they detect a click. these functions use the play() and pause() method that is built into to the API for the HTML video tag.
 ```JavaScript
-  function play() { 
+  function playVideo() { 
       myVideo.play(); 
   }
 
-  function pause() { 
+  function pauseVideo() { 
       myVideo.pause(); 
-  }  
+  } 
 ```
