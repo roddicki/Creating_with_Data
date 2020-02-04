@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+	<title>video</title>
+
+</head>
+
+<body>
+	<div>Embedding a video and controlling it with javascript</div>
+
+	<video  mute controls id="my-video">
+		<source src="my-movie-sea.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+<script> 
+let myVideo = document.querySelector("#my-video"); 
+myVideo.addEventListener('timeupdate', swapVideo);
+
+let videos = ["my-movie-seagull.mp4", "my-movie-cry.mp4"]
+
+function swapVideo(){
+	console.log(myVideo.currentTime);
+	if (myVideo.currentTime > 5) {
+		console.log("greater than 5 secs");
+		//remove the eventlistener so swapVideo isn't triggered again
+		myVideo.removeEventListener('timeupdate', swapVideo);
+		//set source of <video> to the first video in the array
+		myVideo.src = videos[0];
+		//play
+		myVideo.play();
+	};
+}
+
+</script> 
+</body>
+
+</html>
