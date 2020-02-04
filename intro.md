@@ -107,3 +107,22 @@ Then finally add the restart function using the currentTime property of the HTML
 ```
 
 # Part Two
+In this next section continue with the same HTML page and JavaScript and add a timer to the web page. 
+The timer will display how many  milliseconds have elapsed since the start of the video.
+
+The timer will use the timeupdate Property of the HTML video. Each  moment the video  advances  the timeupdate event fires and returns the current time of the video.
+
+To implement this In the HTML add a new div tag with an id.
+```html
+  <div id="current-time">0</div>
+```
+ In the JavaScript  add a timeupdate  add event listener that triggers a function called displayTime() when it fires.
+```JavaScript
+  myVideo.addEventListener('timeupdate', displayTime);
+```
+Add the function displayTime(), so that the inner HTML of the current-time div updates
+```JavaScript
+  function displayTime(){
+    document.querySelector("#current-time").innerHTML = myVideo.currentTime;
+  }
+```
