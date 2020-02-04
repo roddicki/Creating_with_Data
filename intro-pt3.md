@@ -27,3 +27,17 @@ As in the previous  section you should begin with a HTML file with a video tag, 
 
 </html>
 ```
+There are two steps to implementing this.  First in the JavaScript create a variable that targets the video tag so that its properties can be accessed. Then create a function  that is triggered by the timeupdate event. 
+
+Check it works by console logging the timeupdate
+```JavaScript
+<script> 
+	let myVideo = document.querySelector("#my-video"); 
+	myVideo.addEventListener('timeupdate', swapVideo);
+
+	function swapVideo(){
+		console.log(myVideo.currentTime);
+	}
+
+</script> 
+```
