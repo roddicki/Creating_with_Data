@@ -11,9 +11,11 @@ https://www.w3schools.com/tags/ref_av_dom.asp
 More complex 
 https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs 
 
-The first part of this workshop you will create a play / pause button, a restart button and a timer.
+The first part of this workshop you will create a play / pause button, and a restart button 
 
-The second part of the  workshop you will load a video from an array of video files at a set time during play back.
+In the second part you will add a timer.
+
+The third part of the  workshop you will load a video from an array of video files at a set time during play back.
 
 # Part One
 Start with an  HTML document that embeds an MP4 video using the video tag.
@@ -82,3 +84,21 @@ Change your playVideo() function so that it uses an if statement as follows
     };
   }
 ```
+Now we will add a restart button that sets the player back to the beginning of the video clip.
+
+To do this we need to add another link / button.
+```html
+  <div>
+    <a href="#" id="play-video">Play</a>
+    <a href="#" id="pause-video">Pause</a>
+    <a href="#" id="restart-video">Pause</a>
+  </div>
+```
+And an event listener to listen for a click that will trigger a restart function.
+```JavaScript
+  let restartBtn = document.querySelector("#restart-video");
+  restartBtn.addEventListener("click", restartVideo); 
+```
+Then finally we need to add the restart function 
+
+# Part Two
