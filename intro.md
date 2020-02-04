@@ -19,21 +19,21 @@ The second part of the  workshop you will load a video from an array of video fi
 Start with an  HTML document that embeds an MP4 video using the video tag.
 Make sure that the relative path to your video file is correct
 ```html
-<video id="myVideo">
+<video id="my-video">
   <source src="path/to/my-movie.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 ```
 Experiment adding the controls,  loop and autoplay attributes to see the effect that they have. 
 ```html
-<video id="myVideo" controls loop autoplay>
+<video id="my-video" controls loop autoplay>
   <source src="path/to/my-movie.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 ```
 Now you will add some HTML links / buttons and JavaScript to play and pause the video. Add  HTML buttons underneath the video tag and and add a script tag immediately before the the bottom of the body tag (in a production environment it would be better to link a separate JavaScript file, but for this simple prototype script tags embedded in the HTML will suffice).
 ```html
-  <video  mute controls id="myVideo">
+  <video  mute controls id="my-video">
     <source src="my-movie.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -46,4 +46,8 @@ Now you will add some HTML links / buttons and JavaScript to play and pause the 
     //js goes here
   </script> 
 </body>
+```
+Now  target JavaScript to to target the video tag so that it's play and pause properties can be accessed.
+```JavaScript
+  let myVideo = document.querySelector("#my-video"); 
 ```
