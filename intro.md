@@ -17,10 +17,9 @@ The second part of the  workshop you will load a video from an array of video fi
 
 # Part One
 Start with an  HTML document that embeds an MP4 video using the video tag.
-```
+```html
 <video id="myVideo" width="320" height="176">
   <source src="mov_bbb.mp4" type="video/mp4">
-  <source src="mov_bbb.ogg" type="video/ogg">
   Your browser does not support HTML5 video.
 </video>
 ```
