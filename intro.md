@@ -59,4 +59,13 @@ Also target the play and pause links / buttons and add an event listener to list
   let pauseBtn = document.querySelector("#pause-video"); 
   pauseBtn.addEventListener("click", pause); 
 ```
+Now create the play and pause functions the the event listeners will trigger when they detect a click. these functions use the play() and pause() method that is built into to the API for the HTML video tag.
+```JavaScript
+  function play() { 
+      myVideo.play(); 
+  }
 
+  function pause() { 
+      myVideo.pause(); 
+  }  
+```
