@@ -20,12 +20,33 @@ The third part of the  workshop you will load a video from an array of video fil
 # Part One
 Start with an  HTML document that embeds an MP4 video using the video tag.
 Make sure that the relative path to your video file is correct
+Add an id  attribute to the <video> tag and script tags for your JavaScript immediately before the the closing body tag.
 ```html
-<video id="my-video">
-  <source src="path/to/my-movie.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <title>video</title>
+
+</head>
+
+<body>
+   <div>Embedding a video and controlling it with javascript</div>
+
+   <video  mute controls id="my-video">
+    <source src="my-movie.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+	
+<script> 
+  //JavaScript here
+</script> 
+</body>
+
+</html>
 ```
+
 Experiment adding the controls,  loop and autoplay attributes to see the effect that they have. 
 ```html
 <video id="my-video" controls loop autoplay>
