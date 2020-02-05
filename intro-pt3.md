@@ -1,5 +1,5 @@
 # Part Three
-In this exercise you will load a video from an array of video files at a set time.
+In this exercise you will create a web page that plays back a video and then after 5 seconds programmatically replaces the video from an array of video files.
 
 As in the previous  section you should begin with an HTML file with a video tag,  that has an id  attribute and script tags for your JavaScript immediately before the the closing body tag.
 ```html
@@ -27,7 +27,9 @@ As in the previous  section you should begin with an HTML file with a video tag,
 
 </html>
 ```
-There are two steps to implementing this.  First in the JavaScript create a variable that targets the video tag so that its properties can be accessed. Then create a function  that is triggered by the timeupdate event. 
+There are two steps to implementing this.  
+1. Create some code that logs the time as the video plays back and fires a trigger after 5 seconds
+First in the JavaScript create a variable that targets the video tag so that its properties can be accessed. Then create a function  that is triggered by the timeupdate event. 
 
 Check it works by console logging the timeupdate
 ```JavaScript
