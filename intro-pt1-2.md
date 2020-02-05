@@ -47,7 +47,7 @@ Add an id  attribute to the video tag and script tags for your JavaScript immedi
 </html>
 ```
 
-Experiment adding the controls,  loop and autoplay attributes to see the effect that they have. 
+Experiment adding / removing the controls,  loop and autoplay attributes to see the effect that they have. 
 ```html
 <video id="my-video" controls loop autoplay>
   <source src="path/to/my-movie.mp4" type="video/mp4">
