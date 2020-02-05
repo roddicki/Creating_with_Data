@@ -19,8 +19,8 @@ The third part of the  workshop you will load a video from an array of video fil
 
 # Part One
 Start with an  HTML document that embeds an MP4 video using the video tag.
-Make sure that the relative path to your video file is correct
-Add an id  attribute to the <video> tag and script tags for your JavaScript immediately before the the closing body tag.
+Make sure that the relative path to your video file is correct.
+Add an id  attribute to the video tag and script tags for your JavaScript immediately before the closing body tag.
 ```html
 <!DOCTYPE html>
 <html>
