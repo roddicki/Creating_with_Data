@@ -130,3 +130,6 @@ When you test this page you should see the video time up date as the video plays
 # Source Code
 The full source code is available at
 [examples/pt1-2.html](examples/pt1-2.html)
+
+## Continue
+Once you have completed this move on to Part 3 [intro-pt3.html](intro-pt3.html)
