@@ -31,7 +31,7 @@ There are two steps to implementing this.
 1. Create some code that logs the time as the video plays back and fires a trigger after 5 seconds
 2. Create some code that replaces the video playing with a new video from an array of videos
 
-## 1.
+## 1.
 First in the JavaScript create a variable that targets the video tag so that its properties can be accessed. Then create a function  that is triggered by the timeupdate event. 
 
 Check it works by console logging the timeupdate
