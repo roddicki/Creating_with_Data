@@ -1,5 +1,5 @@
 # Part Three
-In this exercise you will create a web page that plays back a video and then after 5 seconds programmatically replaces the video from an array of video files.
+In this exercise you will create a web page that plays back a video and then after 5 seconds programmatically replaces the video with another video clip selected from an array of video files.
 
 As in the previous  section you should begin with an HTML file with a video tag,  that has an id  attribute and script tags for your JavaScript immediately before the the closing body tag.
 ```html
