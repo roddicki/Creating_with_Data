@@ -132,4 +132,4 @@ The full source code is available at
 [examples/pt1-2.html](examples/pt1-2.html)
 
 ## Continue
-Once you have completed this move on to Part 3 [intro-pt3.html](intro-pt3.html)
+Once you have completed this move on to Part 3 [intro-pt3.md](intro-pt3.md)
